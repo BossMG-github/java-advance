@@ -1,15 +1,14 @@
-package lamda;
+package lamda.day1;
 
 import java.util.Arrays;
 import java.util.Collections;
-import java.util.Comparator;
 import java.util.List;
 
 public class LamdaEx04 {
 
 
   public static void main(String[] args) {
-    List<String> names = Arrays.asList("john","Adam", "Eve", "Jane");
+    List<String> names = Arrays.asList("john", "Adam", "Eve", "Jane");
 
     /*Collections.sort(names, new Comparator<String>() {
       @Override
@@ -20,15 +19,14 @@ public class LamdaEx04 {
     System.out.println(names);
 */
 
-    Collections.sort(names, (a,b)->a.compareTo(b));
+    Collections.sort(names, (a, b) -> a.compareTo(b));
     System.out.println(names);
 
-
-    List<Integer> integers = Arrays.asList(1,2,3,4,5,6,7,8,9,10);
+    List<Integer> integers = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
     int sum = 0;
-    for(int number : integers){
+    for (int number : integers) {
       // 리스트 컬렉션의 값 중 모든 짝수의 제곱의 합을 구하세요
-      if(number%2==0){
+      if (number % 2 == 0) {
         int square = number * number;
         sum += square;
       } // if End
@@ -36,7 +34,8 @@ public class LamdaEx04 {
     } // for End
 
     // 위에 코드를 람다로
-    int sum1 = integers.parallelStream().filter(number->number%2==0).mapToInt(number -> number * number).sum();
+    int sum1 = integers.parallelStream().filter(number -> number % 2 == 0)
+        .mapToInt(number -> number * number).sum();
     System.out.println(sum1);
   }
 

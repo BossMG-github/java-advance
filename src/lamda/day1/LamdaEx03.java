@@ -1,10 +1,7 @@
-package lamda;
+package lamda.day1;
 
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
-import lamda.LamdaEx02.MathOperation;
 
 // 1.정수 리스트를 받아 정수를 반환하는 단일 추상 메서드 getMax()를 사용하여 findmax 인터페이스를 생성하세요
 // 2.정수 리스트를 반복하고 최대값을 찾는 람다식을 구현합니다.
@@ -32,11 +29,12 @@ public class LamdaEx03 {
 
     FindMax max = numbers -> {
       int maxNumber = Integer.MIN_VALUE;
-      for(int number : numbers){
-        if(number > maxNumber){
+      for (int number : numbers) {
+        if (number > maxNumber) {
           maxNumber = number;
         }
-      } return maxNumber;
+      }
+      return maxNumber;
     };
 
     List<Integer> numberList = new ArrayList<>();

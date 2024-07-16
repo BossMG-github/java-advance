@@ -5,7 +5,7 @@ import java.util.Properties;
 
 public class PropertiesEx {
 
-  public static void main(String[] args) throws Exception{
+  public static void main(String[] args) throws Exception {
     //Properties 컬렉션 생성
     Properties properties = new Properties();
     //PropertiesEx 클래스를 기준으로 database.properties 를 읽어온다. (상대경로)
