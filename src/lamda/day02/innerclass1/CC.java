@@ -1,6 +1,6 @@
 package lamda.day02.innerclass1;
 
-import lambda.day02.innerclass1.A.B;
+import lamda.day02.innerclass1.A.B;
 
 //로컬 클래스 : 생성자나 메소드 안에서 생성되는 클래스
 public class CC {
