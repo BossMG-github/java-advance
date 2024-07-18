@@ -4,7 +4,7 @@ package lamda.ex;
 @FunctionalInterface
 interface Operator {
 
-  public int apply(int x, int y);
+  int apply(int x, int y);
 }
 
 
